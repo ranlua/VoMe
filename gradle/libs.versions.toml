@@ -1,0 +1,22 @@
+[versions]
+agp = "8.13.0"
+androidx-activity = "1.11.0"
+androidx-material3 = "1.4.0"
+androidx-preference = "1.2.1"
+jetbrains-compose-runtime = "1.9.1"
+jetbrains-kotlin-plugins = "2.2.20"
+jna = "5.18.1"
+oboe = "1.10.0"
+
+[plugins]
+android-gradle-plugin = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "jetbrains-kotlin-plugins" }
+jetbrains-kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "jetbrains-kotlin-plugins" }
+
+[libraries]
+androidx-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "androidx-activity" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "androidx-material3" }
+androidx-preference = { group = "androidx.preference", name = "preference-ktx", version.ref = "androidx-preference" }
+jetbrains-compose-runtime = { group = "org.jetbrains.compose.runtime", name="runtime", version.ref = "jetbrains-compose-runtime" }
+jna = { group = "net.java.dev.jna", name="jna", version.ref = "jna" }
+oboe = { group = "com.google.oboe", name="oboe", version.ref = "oboe" }
