@@ -1,0 +1,23 @@
+‎---
+‎
+‎## ⚙️ BUILD ENVIRONMENT (STRICT COMPLIANCE)
+‎
+‎```
+‎
+‎IDE: Android Code Studio / AndroidIDE (AndroidCSOfficial v1.0.0+gh.r3)
+‎Device Arch: arm64-v8a
+‎Java Home: OpenJDK 17.0.16
+‎
+‎NDK Location: Inside SDK folder (Version 27.1.12297006)
+‎
+‎```
+‎
+‎### Build Toolchain Versions (MANDATORY - NO EXCEPTIONS)
+‎- **Kotlin Version:** 2.2.20
+‎- **Compile SDK:** 35 (Android 15)
+‎- **Build Tools:** 35.0.1 (Mandatory)
+‎- **NDK Version:** "27.1.12297006"
+‎- **CMake Version:** 4.1.1 (Installed & Verified) (Mandatory version 4.1.1 no change!)
+‎- **Android Gradle Plugin (AGP):** 8.13.0 (MUST support SDK 35)
+‎
+‎---

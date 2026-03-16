@@ -20,5 +20,5 @@ dependencyResolutionManagement {
   }
 }
 
-rootProject.name = "Vome"
-include("voicesmith")
+rootProject.name = "Voime"
+include("voime")
