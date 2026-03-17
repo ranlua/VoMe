@@ -32,10 +32,10 @@ plugins {
 }
 
 android {
-  namespace = "de.jurihock.voicesmith"
+  namespace = "ran.day.voime"
 
   defaultConfig {
-    applicationId = "de.jurihock.voicesmith"
+    applicationId = "ran.day.voime"
     versionName = releaseVersionName
     versionCode = releaseVersionCode
     minSdk = sdk[0]
@@ -89,7 +89,7 @@ android {
 
   externalNativeBuild {
     cmake {
-      path = file("src/main/cpp/de/jurihock/voicesmith/CMakeLists.txt")
+      path = file("src/main/cpp/de/jurihock/voime/CMakeLists.txt")
     }
   }
 }

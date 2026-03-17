@@ -21,10 +21,19 @@ There is no official support for other devices or operating system versions.
 - Using [Android CODE Studio](https://github.com/AndroidCSOfficial/android-code-studio)
 - Using [Gradle](https://developer.android.com/build/building-cmdline) from the command line
 
+### Build Toolchain Versions (MANDATORY)
+- **Kotlin Version:** 2.2.20
+- **Compile SDK:** 35 (Android 15)
+- **Build Tools:** 35.0.1
+- **NDK Version:** 27.1.12297006
+- **CMake Version:** 4.1.1
+- **Android Gradle Plugin (AGP):** 8.13.0
+- **Java Home:** OpenJDK 17.0.16
+
 Install _NDK_ and _CMake_ in Android Studio using the bundled _SDK Manager_. I suppose you have to install the _Java JDK_ as well.
 
 ## License
 
-*Voicesmith* is licensed under the terms of the GPL license.
+*Voime* is licensed under the terms of the GPL license.
 For details please refer to the accompanying [LICENSE](LICENSE)
-file distributed with *Voicesmith*.
+file distributed with *Voime*.

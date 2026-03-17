@@ -26,13 +26,13 @@ open class AudioPlugin(val name: String) : AutoCloseable, JnaCallback {
 
   init {
     res.result { res ->
-      jna.voicesmith_plugin_open(name, this, ref, res)
+      jna.voime_plugin_open(name, this, ref, res)
     }.onFailure { throw it }
   }
 
   fun setup(input: Int, output: Int, samplerate: Int, blocksize: Int, channels: Int) {
     res.result { res ->
-      jna.voicesmith_plugin_setup(
+      jna.voime_plugin_setup(
         input, output, samplerate, blocksize, channels,
         ref, res)
     }.onFailure { throw it }
@@ -40,7 +40,7 @@ open class AudioPlugin(val name: String) : AutoCloseable, JnaCallback {
 
   fun set(param: String, value: String) {
     res.result { res ->
-      jna.voicesmith_plugin_set(
+      jna.voime_plugin_set(
         param, value,
         ref, res)
     }.onFailure { throw it }
@@ -48,7 +48,7 @@ open class AudioPlugin(val name: String) : AutoCloseable, JnaCallback {
 
   fun start() {
     res.result { res ->
-      jna.voicesmith_plugin_start(ref, res)
+      jna.voime_plugin_start(ref, res)
     }.onSuccess {
       state = true
     }.onFailure {
@@ -58,7 +58,7 @@ open class AudioPlugin(val name: String) : AutoCloseable, JnaCallback {
 
   fun stop() {
     res.result { res ->
-      jna.voicesmith_plugin_stop(ref, res)
+      jna.voime_plugin_stop(ref, res)
     }.also {
       state = false
     }.onFailure { throw it }
@@ -66,7 +66,7 @@ open class AudioPlugin(val name: String) : AutoCloseable, JnaCallback {
 
   override fun close() {
     res.result { res ->
-      jna.voicesmith_plugin_close(ref, res)
+      jna.voime_plugin_close(ref, res)
     }.also {
       state = false
     }.onFailure { throw it }
@@ -78,7 +78,7 @@ open class AudioPlugin(val name: String) : AutoCloseable, JnaCallback {
         Log.p(event.toLogPriority, "${name}: ${event} ${data}")
         event.onError {
           res.result { res ->
-            jna.voicesmith_plugin_stop(ref, res)
+            jna.voime_plugin_stop(ref, res)
           }.also {
             state = false
           }.also {

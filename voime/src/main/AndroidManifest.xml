@@ -14,7 +14,7 @@
 
   <application android:name="ran.day.voime.Main"
                android:label="@string/title"
-               android:icon="@drawable/voicesmith"
+               android:icon="@drawable/voime"
                android:appCategory="game">
 
     <activity android:name="ran.day.voime.MainActivity"

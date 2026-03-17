@@ -5,7 +5,7 @@ typealias AndroidLog = android.util.Log
 class Log {
   companion object {
 
-    const val TAG = "voicesmith.java"
+    const val TAG = "voime.java"
     const val DEBUG = AndroidLog.DEBUG
     const val INFO = AndroidLog.INFO
     const val WARN = AndroidLog.WARN

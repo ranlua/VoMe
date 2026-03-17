@@ -31,7 +31,7 @@ fun AudioService.startAudioService() : Int {
   val notification = NotificationCompat.Builder(this, id).apply {
     setContentTitle(title)
     setContentText(text)
-    setSmallIcon(R.drawable.voicesmith)
+    setSmallIcon(R.drawable.voime)
     setForegroundServiceBehavior(NotificationCompat.FOREGROUND_SERVICE_IMMEDIATE)
     setContentIntent(intent)
   }

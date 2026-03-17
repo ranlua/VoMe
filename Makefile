@@ -1,6 +1,6 @@
 .PHONY: help build clean dev pair log key props
 
-KEYDNA = CN=Juergen Hock, O=Voicesmith
+KEYDNA = CN=Juergen Hock, O=Voime
 KEYARG = -keyalg RSA -keysize 2048 -validity 12345
 
 SDK = ~/Library/Android/sdk
