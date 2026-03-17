@@ -89,7 +89,7 @@ android {
 
   externalNativeBuild {
     cmake {
-      path = file("src/main/cpp/de/jurihock/voime/CMakeLists.txt")
+      path = file("src/main/cpp/ran/day/voime/CMakeLists.txt")
     }
   }
 }
