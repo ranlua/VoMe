@@ -1,0 +1,12 @@
+.cpm/
+.cxx/
+.gradle/
+.idea/
+.kotlin/
+
+build/
+local.properties
+secret.keystore
+
+.DS_Store
+Thumbs.db
